@@ -13,7 +13,8 @@ function PageNavbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/Services">Services</Nav.Link>
+            <Nav.Link href="/Services">Our Tutors</Nav.Link>
+            <Nav.Link href='/StudyGroups'>Study Groups</Nav.Link>
             <Nav.Link href="/Aboutus">About us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
