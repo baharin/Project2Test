@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-function StudyGroup({course, date, time, tutor}) {
+function StudyGroup({course, date, time}) {
   return (
     <ListGroup>
     
@@ -17,7 +17,7 @@ function StudyGroup({course, date, time, tutor}) {
             {time}
         </div>
         <div className='col-md-3'>
-           <Button variant='primary'>Reserve a Spot</Button> 
+           <Button variant='primary' href='/Project2/Reserve'>Reserve a Spot</Button> 
             
         </div>
         </div>

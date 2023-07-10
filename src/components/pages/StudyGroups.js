@@ -2,12 +2,13 @@ import StudyGroup from '../StudyGroup';
 
 function StudyGroups() {
     
-    const groups = [
-      {course: 'English', date: 'Mon-Tue', time: '10am-12pm'},
-      {course: 'Math', date: 'Mon-Tue', time: '10am-12pm'},
-      {course: 'Science', date: 'Mon-Tue', time: '10am-12pm'},
+  const groups = [
+    {course: 'English', date: 'Mon-Tue', time: '10am-12pm'},
+    {course: 'English', date: 'Fri-Sat', time: '2pm-4pm'},
+    {course: 'Math', date: 'Mon-Tue', time: '10am-12pm'},
+    {course: 'Science', date: 'Mon-Tue', time: '10am-12pm'},
 
-    ];
+  ];
     
 
   return (
