@@ -10,15 +10,29 @@ import Reserve from './components/pages/Reserve';
 import Reserve2 from './components/pages/Reserve2';
 import Confirmation from './components/pages/Confirmation';
 import PageNotFound from './components/pages/PageNotFound';
-
+import { useState } from 'react';
+import i18n from './i18n';
+import LangContext from './LangContext';
 
 function App() {
+
+
+  const [lang, setLocale] = useState(i18n.language);
+
+  i18n.on('languageChanged', () => setLocale(i18n.language));
+
+
   return (
 
+    <div>
+
+    
+    <LangContext.Provider value={{lang, setLocale}}>
+    
     <Router>
 
       <div>
-      <PageNavbar />
+
 
       <Routes>
         <Route exact path='/Project2' element = {<Home />} />
@@ -39,8 +53,10 @@ function App() {
 
     </Router>
 
+    </LangContext.Provider>
 
 
+    </div>
     
   );
 }
