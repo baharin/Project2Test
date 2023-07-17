@@ -3,12 +3,14 @@ import HomeCarousel from "../HomeCarousel";
 import Cards from "../Cards";
 import Reviews from "../Reviews";
 import FAQ from "../FAQ";
+import PageNavbar from "../PageNavbar";
 
 function Home(){
 
     return(
 
         <div>
+            <PageNavbar/>
             <HomeCarousel />
             <h2 className="text-center">Connect with the best tutors in Ottawa</h2>
             <p className="text-center">
@@ -20,15 +22,15 @@ function Home(){
             
             <div className="row">
                 <div className="col-md-4">
-                    <Cards image={'https://cdn-icons-png.flaticon.com/512/4693/4693477.png'} title={'Get help for your homework'} content={'Post your questions in our forums'} />
+                    <Cards alttext={'homework'} image={'https://cdn-icons-png.flaticon.com/512/4693/4693477.png'} title={'Get help for your homework'} content={'Post your questions in our forums'} />
 
                 </div>
                 <div className="col-md-4">
-                    <Cards image={'https://cdn-icons-png.flaticon.com/512/8812/8812435.png'} title={'Join Study Groups'} content={'We have plenty of groups for each course. Join the study groups that you want'} />
+                    <Cards alttext={'Group of students'} image={'https://cdn-icons-png.flaticon.com/512/8812/8812435.png'} title={'Join Study Groups'} content={'We have plenty of groups for each course. Join the study groups that you want'} />
                     
                 </div>
                 <div className="col-md-4">
-                    <Cards image={'https://cdn-icons-png.flaticon.com/512/3449/3449692.png'} title={'Book an appointment'} content={'Book an appointment with a tutor.'}/>
+                    <Cards alttext={'tutor'} image={'https://cdn-icons-png.flaticon.com/512/3449/3449692.png'} title={'Book an appointment'} content={'Book an appointment with a tutor.'}/>
                     
                 </div>
 

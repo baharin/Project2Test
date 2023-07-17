@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import Stepper1 from "../Stepper1";
+import PageNavbar from "../PageNavbar";
 
 
 
@@ -8,6 +9,9 @@ function Confirmation(){
 
 
     return(
+        <div>
+             <PageNavbar></PageNavbar>
+        
         <div className="text-center">
 
             <Stepper1 activestep={2}></Stepper1>
@@ -21,6 +25,7 @@ function Confirmation(){
                 Go to Home Page
             </Button>
 
+        </div>
         </div>
 
     );

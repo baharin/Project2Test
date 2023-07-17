@@ -4,6 +4,7 @@ import Stepper1 from "../Stepper1";
 import { Form } from "react-bootstrap";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
+import PageNavbar from "../PageNavbar";
 
 function Reserve2(){
 
@@ -32,6 +33,7 @@ function Reserve2(){
     return(
 
         <div>
+            <PageNavbar/>
             
             <h2 className="text-center">Choose a study group</h2>
 

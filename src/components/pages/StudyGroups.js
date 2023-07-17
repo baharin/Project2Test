@@ -1,3 +1,4 @@
+import PageNavbar from '../PageNavbar';
 import StudyGroup from '../StudyGroup';
 
 function StudyGroups() {
@@ -16,6 +17,7 @@ function StudyGroups() {
     
     
     <div>
+      <PageNavbar/>
 
     <h3 className='text-center'>Our Study Groups</h3>
            

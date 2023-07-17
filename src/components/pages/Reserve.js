@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Stepper1 from '../Stepper1';
 import { useNavigate } from 'react-router-dom';
 import FormToolTip from '../FormToolTip';
+import PageNavbar from '../PageNavbar';
 
 function Reserve() {
   
@@ -34,6 +35,7 @@ function Reserve() {
   return (
 
     <div>
+      <PageNavbar/>
 
     <h2 className='text-center'> Reserve a spot in a study group </h2>   
 

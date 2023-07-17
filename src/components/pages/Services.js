@@ -1,6 +1,7 @@
 import React from "react";
 
 import SearchBar from "../SearchBar";
+import PageNavbar from "../PageNavbar";
 
 
 function Services(){
@@ -23,6 +24,7 @@ function Services(){
     
     return (
         <div>
+            <PageNavbar/>
         <h1>Tutor List</h1>
         <SearchBar courses={courses} tutors = {tutors} />
         {/* Render the list of tutors */}
