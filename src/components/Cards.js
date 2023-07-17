@@ -1,11 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Cards({image, title, content, isVisible = true}) {
+function Cards({image, title, content, isVisible = true, alttext}) {
 
   return (
     <Card style={{ width: '18rem' , display: isVisible? 'block' : 'none'}}>
-      <Card.Img variant="top" src= {image} />
+      <Card.Img variant="top" src= {image} alt={alttext} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
